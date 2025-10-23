@@ -18,11 +18,11 @@ jobs:
       - name: gradlew 실행 권한 부여
         run: chmod +x ./gradlew
 
-#      # 버전 변수 설정
-#      - name: Get Version from version file
-#        run: |
-#          VERSION=$(cat version)
-#          echo "VERSION=$VERSION" >> $GITHUB_ENV
+      # 버전 변수 설정
+      - name: Get Version from version file
+        run: |
+          VERSION=$(cat version)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       # 변수 출력 확인
       - name: Use Version
