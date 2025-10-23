@@ -136,7 +136,7 @@ WantedBy=multi-user.target" > /usr/lib/systemd/system/scouter-server.service
 	  sed -i "s@serverip@$serverip@g" $sc_dir/agent.host/conf/scouter.conf && sleep 1
 	  sed -i "s@jdkpath@$jdk_path@g" $sc_dir/agent.host/host.sh && sleep 1
 	echo -e "[Unit]
-Description=Scouter-Host Service (v1.0)
+Description=Scouter-Host Service (v1.1)
 After=network.target
 
 [Service]
