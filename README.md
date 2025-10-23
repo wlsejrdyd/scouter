@@ -4,7 +4,9 @@
 기존 배포되어있는 소스에 추가 적인 개발을 하기위해 만들어졌습니다.
 
 필요 소스들만 압축해서 사용 가능하지만, 스크립트 정상 동작을 위해 압축시
-tar cvfz jdy-scouter.tgz ./server ./agent.host ./jdk 와 같은 명령어로 압축 바랍니다. "jdy-scouter" 이름만 있으면 됩니다.
+tar cvfz jdy-scouter.tgz ./server ./agent.host ./jdk 와 같은 명령어로 압축 바랍니다. 
+압축 파일 이름에 "jdy-scouter" 이름으로 시작하면 됩니다.
+Ex) jdy-scouter-1.0.0.tgz
 
 ---
 
@@ -34,3 +36,4 @@ tar cvfz jdy-scouter.tgz ./server ./agent.host ./jdk 와 같은 명령어로 압
 - NEXUS 제품의 데이터 모니터링 개발
 - 기본 제공 메트릭 외 추가 확장 가능성 확인 및 개발
 - Github Action 구성
+
