@@ -29,7 +29,7 @@ Ex) jdy-scouter-1.0.0.tgz
 |--------|-----------|
 | v0.1   | server 설치,설정,실행,방화벽 허용 정책 적용 <br> agent.host 설치,설정,실행 <br> agent.java 설정 | 
 | v0.2   | 서비스 설치 기본 디렉터리 변경 (/home/scoutersvc/scouter) <br> 경로 변경에 따른 설정 파일 및 스크립트 수정 <br> 방화벽 동작 기능 제거 <br> find 명령어 사용 시 사용자가 직접 선택 후 동작하도록 변경 <br> agent.java 톰캣 다중 인스턴스 환경에서 동작 가능하도록 수정 <br> 신규 오류 건 처리 |
-| **v0.3** | 서비스 계정 scoutersvc => apm 변경 <br> 한글 출력 깨짐 방지 추가  |
+| **v0.3** | 서비스 계정 scoutersvc => apm 변경 <br> 한글 출력 깨짐 방지 추가 <br> host agent disk 임계치 수정 및 디스크 alert counter 시간 1시간에서 10분으로 변경  |
 
 ## 🧩 향후 계획 (v0.3 ~ )
 
