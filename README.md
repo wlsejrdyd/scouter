@@ -5,7 +5,7 @@
 
 필요 소스들만 압축해서 사용 가능하지만, 스크립트 정상 동작을 위해 압축시
 tar cvfz jdy-scouter.tgz ./server ./agent.host ./jdk 와 같은 명령어로 압축 바랍니다. 
-압축 파일 이름에**"jdy-scouter"** 이름으로 시작하면 됩니다.
+압축 파일 이름에**jdy-scouter** 이름으로 시작하면 됩니다.
 Ex) jdy-scouter-1.0.0.tgz
 
 ---
