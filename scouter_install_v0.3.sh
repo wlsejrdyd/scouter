@@ -13,7 +13,7 @@ else
     export LC_ALL=C.UTF-8
 fi
 
-echo "[NOTICE] 스카우터 설치 스크립트를 실행 합니다. 문의 사항은 별도 연락 부탁드립니다."
+echo "[NOTICE] 스카우터 설치 스크립트를 실행 합니다. "
 sc_svcid="apm"
 sc_userhome="/home/${sc_svcid}"
 sc_dir="${sc_userhome}/scouter"
@@ -55,7 +55,7 @@ if [ ! -d "$sc_dir" ] ;
     done
     case $var in
       y | Y )
-        find1=`find /* -type f -name "jdy-scouter*" -exec echo "압축 파일 경로 : {}" \;`
+        find1=`find /* -type f -name "nx-scouter*" -exec echo "압축 파일 경로 : {}" \;`
 	echo "${find1}"
         echo -n "위 경로를 참고하여 압축 파일 경로 입력 해주세요. : "
         read path
@@ -99,7 +99,7 @@ while true ; do
 	if [ ! -f "$sc_dir/server/conf/scouter.conf" ] ; then
 	  echo "[WARNING] 설정파일이 없습니다."
 	fi
-	read -p "서버 명칭을 입력 해주세요 (ex : jdy-scouter-server) : " serverid
+	read -p "서버 명칭을 입력 해주세요 (ex : nx-scouter-server) : " serverid
 	  sed -i "s@serverid@$serverid@g" $sc_dir/server/conf/scouter.conf && sleep 1
 	  sed -i "s@scdir@$sc_dir@g" $sc_dir/server/conf/scouter.conf && sleep 1
 	  sed -i "s@jdkpath@$jdk_path@g" $sc_dir/server/startup.sh && sleep 1
@@ -187,7 +187,7 @@ WantedBy=multi-user.target" > /usr/lib/systemd/system/scouter-host.service
             break 
           fi
 	  echo -e "[WARNING] 지금 등록할 값은 모니터링에 등록 할 톰캣의 object 이름입니다.\n[WARNING] 해당값은 중복되지 않아야 합니다.\n[WARNING] 중복되는 경우 덮어쓰여지게 됩니다."
-	  read -p "(ex : jdy-was-01) : " objname
+	  read -p "(ex : nx-was-01) : " objname
 	  cp -ar $sc_dir/agent.java/conf/scouter.conf $sc_dir/agent.java/conf/scouter.${objname}.conf
 	  sed -i "s@objtmpname@$objname@g" $sc_dir/agent.java/conf/scouter.${objname}.conf && sleep 1
 	  if [ -f ${sc_dir}/agent.host/conf/scouter.conf ] ; then

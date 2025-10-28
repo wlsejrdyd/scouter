@@ -4,9 +4,11 @@
 기존 배포되어있는 소스에 추가 적인 개발을 하기위해 만들어졌습니다.
 
 필요 소스들만 압축해서 사용 가능하지만, 스크립트 정상 동작을 위해 압축시
-tar cvfz jdy-scouter.tgz ./server ./agent.host ./jdk 와 같은 명령어로 압축 바랍니다. 
-압축 파일 이름에**jdy-scouter** 이름으로 시작하면 됩니다.
-Ex) jdy-scouter-1.0.0.tgz
+cp -ar nx-dev-scouter/{server,agent.host,agent.java} ./scouter
+tar cvfz nx-scouter.tgz ./jdk ./scouter 와 같이 **scouter 디렉터리 생성 후 패키지를 압축**해야 합니다.
+
+압축 파일 이름에 **nx-scouter** 이름으로 시작하게 하는 것이 좋습니다.
+Ex) nx-scouter-20251028.tgz
 
 ---
 
