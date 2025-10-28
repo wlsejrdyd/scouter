@@ -17,7 +17,7 @@ Ex) jdy-scouter-1.0.0.tgz
 - Server/Collector (scouter-server)
 - Agent-Host (scouter-host)
 - Agent-Java
-- install shell script ("scouter_install_<VERSION>.sh")
+- install shell script ("scouter_install_$(cat version).sh")
 
 ---
 

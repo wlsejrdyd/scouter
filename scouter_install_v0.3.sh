@@ -14,7 +14,7 @@ else
 fi
 
 echo "[NOTICE] 스카우터 설치 스크립트를 실행 합니다. 문의 사항은 별도 연락 부탁드립니다."
-sc_svcid="apm1"
+sc_svcid="apm"
 sc_userhome="/home/${sc_svcid}"
 sc_dir="${sc_userhome}/scouter"
 jdk_path="${sc_userhome}/jdk"
